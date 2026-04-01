@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #364b63;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider{
+    height: 450px;
+    width: 800px;
+
+    background-image: url("https://wallpapercave.com/wp/wp2764634.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: animate 15s infinite;
+}
+
+.slider{
+    height: 450px;
+    width: 800px;
+
+    background-image: url("https://picsum.photos/800/450?random=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: animate 15s infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url("https://picsum.photos/800/450?random=1");
+    }
+    25%{
+        background-image: url("https://picsum.photos/800/450?random=2");
+    }
+    50%{
+        background-image: url("https://picsum.photos/800/450?random=3");
+    }
+    75%{
+        background-image: url("https://picsum.photos/800/450?random=4");
+    }
+    100%{
+        background-image: url("https://picsum.photos/800/450?random=5");
+    }
+}
